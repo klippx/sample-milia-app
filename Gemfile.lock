@@ -1,7 +1,16 @@
 GIT
-  remote: git://github.com/dsaronin/milia.git
-  revision: dcea1b6edd402909473f52f180d61a8b94965e10
-  branch: v1.0.0-beta-7
+  remote: git://github.com/rails/activerecord-session_store.git
+  revision: e879bf087eb684452aaddb734efa20b95588b141
+  specs:
+    activerecord-session_store (0.1.0)
+      actionpack (>= 4.0.0, < 5)
+      activerecord (>= 4.0.0, < 5)
+      railties (>= 4.0.0, < 5)
+
+GIT
+  remote: git://github.com/klippx/milia.git
+  revision: d259018b55ec2b5015896dbcad5c6c2f79e47260
+  branch: fix-milia-install
   specs:
     milia (1.0.0)
       devise (~> 3.2)
@@ -126,6 +135,7 @@ GEM
     rake (10.3.2)
     rdoc (4.1.1)
       json (~> 1.4)
+    recaptcha (0.3.6)
     ruby_parser (3.4.1)
       sexp_processor (~> 4.1)
     sass (3.2.19)
@@ -223,6 +233,7 @@ PLATFORMS
 
 DEPENDENCIES
   SystemTimer
+  activerecord-session_store!
   coffee-rails (~> 4.0.0)
   devise (~> 3.2)
   haml-rails
@@ -234,6 +245,7 @@ DEPENDENCIES
   rack-timeout
   rails
   rails_12factor
+  recaptcha
   sass-rails (~> 4.0.3)
   sdoc (~> 0.4.0)
   spring

@@ -56,7 +56,8 @@ gem 'spring',        group: :development
 
   gem 'web-app-theme', :git => 'git://github.com/dsaronin/web-app-theme.git'
   gem 'devise', '~>3.2'
-  gem 'milia', :git => 'git://github.com/dsaronin/milia.git', :branch => 'v1.0.0-beta-7'
+  #gem 'milia', :git => 'git://github.com/dsaronin/milia.git', :branch => 'v1.0.0-beta-7'
+  gem 'milia', :git => 'git://github.com/klippx/milia.git', :branch => 'fix-milia-install'
 
   # airbrake is optional and configured by config.use_airbrake in milia initializer
   # default is false; if you change it to true, uncomment out the line below
@@ -65,3 +66,6 @@ gem 'spring',        group: :development
   # recaptcha is optional and configured by config.use_recaptcha in milia initializer
   # default is true; if you change it to false, comment out the line below
   # gem 'recaptcha', :require => "recaptcha/rails"
+
+gem "recaptcha", require: "recaptcha/rails"
+gem "activerecord-session_store", github: "rails/activerecord-session_store"
