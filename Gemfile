@@ -58,7 +58,7 @@ gem 'spring',        group: :development
   gem 'devise', '~>3.2'
   #gem 'milia', :git => 'git://github.com/dsaronin/milia.git', :branch => 'v1.0.0-beta-7'
   gem 'milia', :git => 'git://github.com/klippx/milia.git', :branch => 'fix-milia-install'
-
+  gem 'foreman'
   # airbrake is optional and configured by config.use_airbrake in milia initializer
   # default is false; if you change it to true, uncomment out the line below
   # gem 'airbrake'   # uncomment this if you will use airbrake for exception notifications
